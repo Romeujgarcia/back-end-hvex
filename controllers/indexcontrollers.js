@@ -80,7 +80,7 @@ const UpdateUser = (req, res, next) => {
 // delete as User
 const deleteUser = (req, res, next) => {
   let noderestID = req.body.noderestID;
-  indexmodels.findByIdAndRemove(employeeID)
+  indexmodels.findByIdAndRemove(noderestID)
     .then(() => {
       res.json({
         message: "User deleted successfully",
